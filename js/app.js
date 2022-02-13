@@ -16,7 +16,9 @@ function generatePin(){
 
 document.getElementById('key-pad').addEventListener('click', function(event){
     const number = event.target.innerText;
-    const calc = document.getElementById('typed-numbers');
-    calc.value = number;
+    const calcInput = document.getElementById('typed-numbers');
+    const previousNumber = calcInput.value;
+    const newNumber = previousNumber + number;
+    calcInput.value = newNumber;
 
-})
+});
