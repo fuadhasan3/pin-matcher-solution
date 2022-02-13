@@ -13,3 +13,10 @@ function generatePin(){
     const pin = getPin();
     document.getElementById('display-pin').value = pin;
 }
+
+document.getElementById('key-pad').addEventListener('click', function(event){
+    const number = event.target.innerText;
+    const calc = document.getElementById('typed-numbers');
+    calc.value = number;
+
+})
