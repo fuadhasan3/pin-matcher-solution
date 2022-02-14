@@ -35,9 +35,11 @@ function verifyPin() {
     const pin = document.getElementById('display-pin').value;
     const typedNumbers = document.getElementById('typed-numbers').value;
     if(pin == typedNumbers){
-        console.log('matched. YAY!');
+        const successMassage = document.getElementById('notify-success');
+        successMassage.style.display = 'block';
     }
     else{
-        console.log('No BaBy');
+        const failError = document.getElementById('notify-fail');
+        failError.style.display = 'block';
     }
 }
