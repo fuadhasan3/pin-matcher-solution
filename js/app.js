@@ -30,3 +30,14 @@ document.getElementById('key-pad').addEventListener('click', function(event){
     }
 
 });
+
+function verifyPin() {
+    const pin = document.getElementById('display-pin').value;
+    const typedNumbers = document.getElementById('typed-numbers').value;
+    if(pin == typedNumbers){
+        console.log('matched. YAY!');
+    }
+    else{
+        console.log('No BaBy');
+    }
+}
